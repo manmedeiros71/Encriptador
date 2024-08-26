@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Encriptador</title>
 </head>
 <header> 
     <img class = "logoAlura" src="/imagens/logoAlura.png" alt="Logo da Alura Encriptador">
+    <div>
+        <!--img id="secao__2__imagem" class="imagem__secao__2" src= "./imagens/boneco.png" alt="Boneco Alura"-->
+    </div>
 </header>
 <body>
     <main class="conteudo">
+        <div>
+            <img id="secao__2__imagem" class="imagem__secao__2" src= "./imagens/boneco.png" alt="Boneco Alura">
+        </div>
         <section class="secao__1">
             <textarea id="entrada__texto" class="entrada" type="text" placeholder="Digite seu texto"></textarea>
-            <div class="advertencia">    
+                <div class="advertencia">    
                 <div class="advertencia__texto">
-                    <img class="advertencia__icone" src="./assets/exclamacao.png" alt="">
+                    <!--img class="advertencia__icone" src="./assets/exclamacao.png" alt=""-->
                     <p>Apenas letras minúsculas e sem acento.</p>
-                    <img id="secao__2__imagem" class="imagem__secao__2" src= "./imagens/boneco.png" alt="">
                 </div>
                 <div class="botoes__secao__1">
                     <button onclick="btnCriptografar()"><img src="imagens/botao-crip.png" alt="Botao criptografar"></button>
@@ -33,7 +38,7 @@
                     </div>
                 </div>
                 <textarea id="saida__texto" class="resultado" ></textarea>
-                <button id="btn__copiar" class="botao__copiar" >copiar</button>
+                <button onclick="copiar()"> <img src="imagens/botao-copiar.png" alt="Botao copiar"></button>
         </section>
     </main>
     <footer class="rodape">Criado por Manoel Jr</footer>
